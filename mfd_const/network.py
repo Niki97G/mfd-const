@@ -39,6 +39,7 @@ class Family(Enum):
     I225 = auto()
     I710 = auto()
     RRC = auto()
+    SVL = auto()
 
 
 family_to_full_name = InternalDict(
@@ -50,6 +51,7 @@ family_to_full_name = InternalDict(
         Family.CNV: "Connorsville",
         Family.LKV: "Linkville",
         Family.GNRD: "Granite Rapids",
+        Family.SVL: "Summitville",
     }
 )
 
@@ -286,6 +288,9 @@ DEVICE_IDS = {
         "0x15AC",
         "0x15AD",
         "0x15AE",
+    ],
+    Family.SVL.name: [
+        "0x1EFE",
     ],
     Family.HTWL.name: ["0x10D3", "0x10F6"],
     Family.I350.name: ["0x1521", "0x1522", "0x1523", "0x1524"],
